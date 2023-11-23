@@ -1,0 +1,137 @@
+body {
+  background-image: url("assets/images/taskBoard_background.jpg");
+}
+
+.text-center {
+  direction: ltr;
+}
+
+.header {
+  font-family: "Libre Baskerville", serif;
+}
+
+h5{
+    padding: 5px;
+    text-decoration-line: underline;
+}
+
+#descriptionBox{    
+    font-weight: 500;
+}
+
+.notebookBg {
+  background-image: url("assets/images/notebook_Background.jpg");
+  width: 50%;
+  margin: auto;
+  background-size: contain;
+}
+
+form {
+  font-family:Courier, monospace;
+  background-color: transparent;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.task {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-image: url("assets/images/nodePicture.png");
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+.remove {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 12px;
+  right: 3px;
+  cursor: pointer;
+  display: none;
+}
+
+.task:hover .remove {
+  display: block;
+}
+.note {
+  color: black;
+  border: none;
+  resize: none;
+  overflow-y: auto;
+  background-color: transparent;
+}
+.noteBg {
+  padding-top: 50px;
+  background-color: transparent;
+}
+.date {
+  text-align: left;
+  bottom: 3px;
+  position: absolute;
+}
+
+/* Change the color of the scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+/* Change the color of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #a0a0a0;
+}
+
+/* The fade-in transition */
+.task.fade-in {
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
+.task.fade-in.active {
+  opacity: 1;
+}
+
+/* button design */
+.button-paper {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-paper:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+.button-paper:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
